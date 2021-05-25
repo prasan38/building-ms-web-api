@@ -17,7 +17,8 @@ app.use(bodyParser.json());
 
 app.use(express.static("uploads"));
 
-const uri = "mongodb+srv://prasanfirstCluster1:prasanfirstCluster1@clusterprasan.obm6h.mongodb.net/test?retryWrites=true&w=majority";
+// the url for mongodb is not the correct url, it is just for an example
+const uri = "mongodb+srv://cluster1:cluster1@cluster.obm6h.mongodb.net/test?retryWrites=true&w=majority";
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
