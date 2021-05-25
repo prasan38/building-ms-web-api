@@ -1,18 +1,16 @@
 const User = require("../Models/User");
 
 const isAdmin = (req, res, next) => {
-    try{
-        
-        if(req.user.role == "admin"){
+    try {
+        if (req.user.role == "admin") {
             next();
-        }else{
+        } else {
             res.json({
                 message: "Not an admin user"
             });
         }
-        
     }
-    catch(error){
+    catch (error) {
         res.json({
             message: "Error"
         })

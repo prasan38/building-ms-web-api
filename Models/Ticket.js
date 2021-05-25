@@ -27,9 +27,9 @@ const schema = mongoose.Schema({
         type: String
     },
 },
-{
-    timestamps: true
-});
+    {
+        timestamps: true
+    });
 
 
 const Ticket = mongoose.model('Ticket', schema);

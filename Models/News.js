@@ -17,8 +17,7 @@ const schema = mongoose.Schema({
 },
     {
         timestamps: true
-});
-
+    });
 
 const News = mongoose.model('News', schema);
 module.exports = News;
